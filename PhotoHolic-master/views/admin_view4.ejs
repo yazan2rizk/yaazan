@@ -1,0 +1,28 @@
+<% include partials/header1%>
+<div class="container">
+<table style="width:100%">
+  <tr>
+   <th>Hashtag name</th>
+    <th>Frequency of Usage</th> 
+   
+  </tr>
+ <%for(var i=0;i<result.length; i++){%>
+
+ <tr>
+ 	<td><%= result[i].tag_name%></td>
+ 	<td><%=result[i].county%></td>
+ 	
+ </tr>
+ <%}%>
+</table>
+</div>
+<% include partials/footer%>
+
+
+
+
+
+
+
+
+
